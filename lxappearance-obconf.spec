@@ -45,6 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/lxappearance/plugins/obconf.la
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/tt_RU
 
 %find_lang %{name}
 
