@@ -9,12 +9,12 @@
 
 Summary:	LXAppearance ObConf plugin
 Name:		lxappearance-obconf
-Version:	0.0.1
-Release:	2
+Version:	0.2.0
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
-# Source0-md5:	7c6381bc1ff60e23ef7f31d5e70a1803
+# Source0-md5:	8bf23c90febe6a655e0f86c80e44725d
 URL:		http://wiki.lxde.org/en/LXAppearance
 BuildRequires:	gettext-devel
 %{?with_gtk2:BuildRequires:	gtk+2-devel >= 2:2.12.0}
