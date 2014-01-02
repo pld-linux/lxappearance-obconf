@@ -9,12 +9,12 @@
 
 Summary:	LXAppearance ObConf plugin
 Name:		lxappearance-obconf
-Version:	0.2.0
+Version:	0.2.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
-# Source0-md5:	8bf23c90febe6a655e0f86c80e44725d
+# Source0-md5:	1f061c96e0c78a6476421ca294ac24aa
 URL:		http://wiki.lxde.org/en/LXAppearance
 BuildRequires:	gettext-devel
 %{?with_gtk2:BuildRequires:	gtk+2-devel >= 2:2.12.0}
@@ -37,7 +37,7 @@ ObConf is a program used to configure OpenBox window manager.
 %configure \
 	--disable-static \
 	%{?with_gtk3:--enable-gtk3}
-%{__make}
+%{__make} V=1
 
 %install
 rm -rf $RPM_BUILD_ROOT
