@@ -1,0 +1,10 @@
+--- lxappearance-obconf-0.2.3/src/preview.c~	2016-02-20 23:51:23.000000000 +0100
++++ lxappearance-obconf-0.2.3/src/preview.c	2024-07-30 16:09:48.811594714 +0200
+@@ -31,6 +31,7 @@
+ 
+ #if GTK_CHECK_VERSION(3, 0, 0)
+ #include <gdk/gdkx.h>
++#include <cairo-xlib.h>
+ #endif
+ 
+ #define PADDING 2 /* openbox does it :/ */

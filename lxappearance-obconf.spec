@@ -6,11 +6,12 @@ Summary:	LXAppearance ObConf plugin
 Summary(pl.UTF-8):	Wtyczka ObConf dla LXAppearance
 Name:		lxappearance-obconf
 Version:	0.2.3
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.xz
 # Source0-md5:	ae0076d489aa786f5d573f7ff592a4ab
+Patch0:		cairo-headers.patch
 URL:		http://www.lxde.org/
 BuildRequires:	gdk-pixbuf2-devel >= 2.0
 BuildRequires:	gettext-tools
@@ -38,6 +39,7 @@ ObConf to program służący do konfigurowania zarządcy okien OpenBox.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure \
